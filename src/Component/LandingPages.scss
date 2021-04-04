@@ -1,0 +1,35 @@
+$mainColor: #5AC8FA;
+$primary: #000000;
+$whiteColor: #FFFFFF;
+
+
+// font style
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,300,600&display=swap');
+
+
+.landing-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient($mainColor, $whiteColor, $whiteColor);
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.new-product-title {
+    margin-top: 200px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.year {
+    margin-top: 200px;
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 12px;
+}
