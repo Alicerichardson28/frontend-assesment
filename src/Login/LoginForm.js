@@ -40,7 +40,7 @@ const LoginForm = () => {
 
     return (
         <div className="container">
-            <form onSubmit={onSubmit} className="form-container">
+            <form onSubmit={onSubmit} className="sign-in-form-container">
                 <h1 className='sign-in-title'>Sign-In</h1>
                 <div className="form-inputs">
                     <label className="from-label">Email</label>

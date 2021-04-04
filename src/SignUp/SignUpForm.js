@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
+import './SignUpForm.scss'
 
 
 
@@ -49,7 +50,7 @@ const SignUpForm = () => {
 
     return (
         <div className="container">
-            <form onSubmit={onSubmit} className="form-container">
+            <form onSubmit={onSubmit} className="sign-up-form-container">
                 <h1 className='sign-in-title'>Sign-Up</h1>
                 <div className="form-inputs">
                     <label className="from-label">Full Name</label>
@@ -92,7 +93,7 @@ const SignUpForm = () => {
                 </div>
                 <button type="submit" className='sign-in-btn'><p className='sign-in-text'>Sign-Up</p></button>
             </form>
-            <div className="not-registered-container">
+            <div className="already-registered-container">
                 <p>Already registered? </p>
                 <Link to="/" className='sign-up-link'>sign-In</Link>
             </div>

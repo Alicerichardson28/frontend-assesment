@@ -14,18 +14,19 @@ $whiteColor: #FFFFFF;
     justify-content: center;
     align-items: center;
 }
-.sign-in-form-container {
+.sign-up-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: 500px;
     width: 450px;
     background-color: $whiteColor;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #F2F2F2;
     opacity: 1;
 }
+
 .sign-in-title{
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -63,14 +64,14 @@ label {
     color: $whiteColor;
 }
 
-.not-registered-container{
+.already-registered-container{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     margin-top: 10px;
     width: 55%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .sign-up-link {
     color: $mainColor;
