@@ -1,0 +1,43 @@
+$mainColor: #5AC8FA;
+$primary: #000000;
+$whiteColor: #FFFFFF;
+
+
+// font style
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,300,600&display=swap');
+
+.container {
+    height: 100vh;
+    background-image: linear-gradient($mainColor, $whiteColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    background-color: $whiteColor;
+}
+.sign-in-title{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.form-label{
+    font-family: 'Poppins', sans-serif;
+}
+.input-box {
+    width: 400px;
+    height: 30px;
+}

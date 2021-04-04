@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './LoginForm.scss'
 
 const LoginForm = () => {
     const [fullName, setFullName] = useState("");
@@ -36,27 +37,36 @@ const LoginForm = () => {
     }
 
     return (
-        <form onSubmit={onSubmit}>
-            <label>Full name</label>
-            <input 
-                type="text"
-                value={fullName}
-                onChange={(e)=>{setFullName(e.target.value)}}
-            />
-            {Object.keys(fullNameErr).map((key)=>{
-                return <div style={{color : "red"}}>{fullNameErr[key]}</div>
-            })}
-            <label>Password</label>
-            <input 
-                type="password"
-                value={passWord}
-                onChange={(e)=>{setPassWord(e.target.value)}}
-            />
-            {Object.keys(passWordErr).map((key)=>{
-                return <div style={{color : "red"}}>{passWordErr[key]}</div>
-            })}
-            <button type="submit">Sign-In</button>
-        </form>
+        <div className="container">
+            <form onSubmit={onSubmit} className="form-container">
+                <h1 className='sign-in-title'>Sign-In</h1>
+                <div className="form-inputs">
+                    <label className="from-label">Full name</label>
+                    <input 
+                        className="input-box"
+                        type="text"
+                        value={fullName}
+                        onChange={(e)=>{setFullName(e.target.value)}}
+                    />
+                    {Object.keys(fullNameErr).map((key)=>{
+                        return <div style={{color : "red"}}>{fullNameErr[key]}</div>
+                    })}
+                </div>
+                <div className="form-inputs">
+                    <label className="from-label">Password</label>
+                    <input
+                        className="input-box" 
+                        type="password"
+                        value={passWord}
+                        onChange={(e)=>{setPassWord(e.target.value)}}
+                    />
+                    {Object.keys(passWordErr).map((key)=>{
+                        return <div style={{color : "red"}}>{passWordErr[key]}</div>
+                    })}
+                </div>
+                <button type="submit">Sign-In</button>
+            </form>
+        </div>
     )
 }
 
