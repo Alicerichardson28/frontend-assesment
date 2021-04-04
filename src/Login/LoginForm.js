@@ -20,13 +20,13 @@ const LoginForm = () => {
         let isValid = true;
 
         // handle error from Full name
-        if(fullName.trim()){
+        if(!fullName.trim()){
             fullNameErr.firstNameRequired = "Full name required";
             isValid = false;
         }
 
         //  handle error from Password
-        if(passWord.trim()){
+        if(!passWord.trim()){
             passWordErr.passWordRequired = 'Password is required'
         }
 
@@ -43,12 +43,18 @@ const LoginForm = () => {
                 value={fullName}
                 onChange={(e)=>{setFullName(e.target.value)}}
             />
+            {Object.keys(fullNameErr).map((key)=>{
+                return <div style={{color : "red"}}>{fullNameErr[key]}</div>
+            })}
             <label>Password</label>
             <input 
                 type="password"
                 value={passWord}
                 onChange={(e)=>{setPassWord(e.target.value)}}
             />
+            {Object.keys(passWordErr).map((key)=>{
+                return <div style={{color : "red"}}>{passWordErr[key]}</div>
+            })}
             <button type="submit">Sign-In</button>
         </form>
     )
