@@ -8,7 +8,7 @@ $whiteColor: #FFFFFF;
 
 .container {
     height: 100vh;
-    background-image: linear-gradient($mainColor, $whiteColor);
+    background-image: linear-gradient($mainColor, $whiteColor, $whiteColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +22,9 @@ $whiteColor: #FFFFFF;
     height: 450px;
     width: 450px;
     background-color: $whiteColor;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F2F2F2;
+    opacity: 1;
 }
 .sign-in-title{
     text-align: center;
@@ -34,10 +37,42 @@ $whiteColor: #FFFFFF;
     align-items: left;
 }
 
-.form-label{
+label {
+    font-size: 14px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
 }
 .input-box {
     width: 400px;
-    height: 30px;
+    height: 40px;
+}
+
+.form-inputs {
+    margin-top: 20px;
+}
+
+.sign-in-btn {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    background: $primary 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.sign-in-text {
+    font-family: 'Poppins', sans-serif;
+    color: $whiteColor;
+}
+
+.not-registered-container{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.sign-up-link {
+    color: $mainColor;
+    padding-left: 5px;
 }

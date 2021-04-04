@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import './LoginForm.scss'
 
 const LoginForm = () => {
-    const [fullName, setFullName] = useState("");
+    const [email, setEmail] = useState("");
     const [passWord, setPassWord] = useState("");
 
     // declare state for handle error
-    const [fullNameErr, setFullNameErr] = useState({});
+    const [emailErr, setEmailErr] = useState({});
     const [passWordErr, setPassWordErr] = useState({});
 
     // create validate 
@@ -16,13 +16,13 @@ const LoginForm = () => {
     }
 
     const formValidation = () => {
-        const fullNameErr = {}; 
+        const emailErr = {}; 
         const passWordErr = {}; 
         let isValid = true;
 
         // handle error from Full name
-        if(!fullName.trim()){
-            fullNameErr.firstNameRequired = "Full name required";
+        if(!email.trim()){
+            emailErr.firstNameRequired = "Email is required";
             isValid = false;
         }
 
@@ -31,7 +31,7 @@ const LoginForm = () => {
             passWordErr.passWordRequired = 'Password is required'
         }
 
-        setFullNameErr(fullNameErr);
+        setEmailErr(emailErr);
         setPassWordErr(passWordErr);
         return isValid;
     }
@@ -41,20 +41,22 @@ const LoginForm = () => {
             <form onSubmit={onSubmit} className="form-container">
                 <h1 className='sign-in-title'>Sign-In</h1>
                 <div className="form-inputs">
-                    <label className="from-label">Full name</label>
+                    <label className="from-label">Email</label>
                     <input 
+                        placeholder="user@email.com"
                         className="input-box"
                         type="text"
-                        value={fullName}
-                        onChange={(e)=>{setFullName(e.target.value)}}
+                        value={email}
+                        onChange={(e)=>{setEmail(e.target.value)}}
                     />
-                    {Object.keys(fullNameErr).map((key)=>{
-                        return <div style={{color : "red"}}>{fullNameErr[key]}</div>
+                    {Object.keys(emailErr).map((key)=>{
+                        return <div style={{color : "red"}}>{emailErr[key]}</div>
                     })}
                 </div>
                 <div className="form-inputs">
                     <label className="from-label">Password</label>
                     <input
+                        placeholder=""
                         className="input-box" 
                         type="password"
                         value={passWord}
@@ -64,8 +66,12 @@ const LoginForm = () => {
                         return <div style={{color : "red"}}>{passWordErr[key]}</div>
                     })}
                 </div>
-                <button type="submit">Sign-In</button>
+                <button type="submit" className='sign-in-btn'><p className='sign-in-text'>Sign-In</p></button>
             </form>
+            <div className="not-registered-container">
+                <p>Not registered? </p>
+                <a href="#" className='sign-up-link'>sign-up</a>
+            </div>
         </div>
     )
 }
