@@ -6,6 +6,10 @@ $whiteColor: #FFFFFF;
 // font style
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,300,600&display=swap');
 
+.nav-bar {
+    height: 60px;
+    background-color: $primary;
+}
 
 .landing-page-container {
     display: flex;
@@ -15,6 +19,7 @@ $whiteColor: #FFFFFF;
     background-image: linear-gradient($mainColor, $whiteColor, $whiteColor);
 }
 .content-container {
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,9 +27,12 @@ $whiteColor: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
 .new-product-title {
-    margin-top: 200px;
     font-size: 25px;
     font-weight: 500;
+}
+.new-product-link{
+    text-decoration: none;
+    color: $primary;
 }
 
 .year {

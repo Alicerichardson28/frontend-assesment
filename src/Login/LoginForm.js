@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import './LoginForm.scss'
-import SignUpForm from '../SignUp/SignUpForm'
 import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
