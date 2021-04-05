@@ -6,8 +6,8 @@ $whiteColor: #FFFFFF;
 // font style
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,300,600&display=swap');
 
-.nav-bar {
-    height: 60px;
+.nav-bar-landing-page{
+    height: 80px;
     background-color: $primary;
     display: flex;
     justify-content: center;
@@ -15,10 +15,12 @@ $whiteColor: #FFFFFF;
 }
 
 .landing-page-container {
+    margin-top: 10px;
+    margin: 10px 100px 0 100px ;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-image: linear-gradient($mainColor, $whiteColor, $whiteColor);
 }
 .content-container {

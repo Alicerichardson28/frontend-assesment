@@ -6,6 +6,15 @@ $whiteColor: #FFFFFF;
 // font style
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,300,600&display=swap');
 
+.nav-bar-welcome-page {
+    width: 60px;
+    height: 70px;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .welcome-page-container {
     display: flex;
     justify-content: center;
@@ -23,13 +32,13 @@ $whiteColor: #FFFFFF;
 }
 
 .welcome-title {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
 }
 
 .see-product {
     margin-top: 200px;
-    font-size: 18px;
+    font-size: 16px;
     color: $mainColor;
 }
 
