@@ -9,6 +9,9 @@ $whiteColor: #FFFFFF;
 .nav-bar {
     height: 60px;
     background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .landing-page-container {
