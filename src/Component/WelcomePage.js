@@ -3,13 +3,16 @@ import { IconContext } from "react-icons";
 import { MdPhoneIphone, MdLaptopMac } from "react-icons/md";
 import { CgAppleWatch } from "react-icons/cg";
 import { AiFillApple } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 import './WelcomePage.scss'
 
 const WelcomePage = () => {
     return (
         <>
             <div className="nav-bar-welcome-page-logo">
-                <AiFillApple size='45px' color='white' />
+                <Link to="/landingPage">
+                    <AiFillApple size='45px' color='white' />
+                </Link>
             </div>
             <div className="nav-bar-welcome-page-list">
                 <a href="#" className="nav-link">iPhone</a>
