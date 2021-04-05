@@ -1,0 +1,48 @@
+$mainColor: #5AC8FA;
+$primary: #000000;
+$whiteColor: #FFFFFF;
+
+
+// font style
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,300,600&display=swap');
+
+.nav-bar-welcome-page-logo {
+    margin: 0;
+    width: 100px;
+    height: 80px;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:left;
+}
+
+.nav-bar-welcome-page-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    padding-right: 60px;
+}
+.nav-link {
+    text-decoration: none;
+    padding-right: 30px ;
+    font-size: 18px;
+    color: rgb(131, 131, 131);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link-notify-me {
+    text-decoration: none;
+    color: $primary;
+    font-family: 'Poppins', sans-serif;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    
+    background-color: $mainColor;
+}
