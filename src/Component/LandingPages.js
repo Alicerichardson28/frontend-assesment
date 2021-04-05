@@ -10,7 +10,6 @@ const LandingPages = () => {
             <div className="nav-bar-landing-page">
                 <AiFillApple size='32px' color='white' />
             </div>
-            
                 <div className='landing-page-container'>
                     <div className='content-container'>
                         <Link to='/WelcomePage' className='new-product-link'><h1 className='new-product-title'>New Products Coming This Summer</h1></Link>

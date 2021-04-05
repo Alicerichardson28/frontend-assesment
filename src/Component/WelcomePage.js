@@ -8,8 +8,16 @@ import './WelcomePage.scss'
 const WelcomePage = () => {
     return (
         <>
-            <div className="nav-bar-welcome-page">
-                <AiFillApple size='32px' color='white' />
+            <div>
+                <div className="nav-bar-welcome-page-logo">
+                    <AiFillApple size='32px' color='white' />
+                </div>
+                <div className="nav-bar-welcome-page-list">
+                    <a href="#" className="nav-link">iPhone</a>
+                    <a href="#" className="nav-link">MacBook Pro</a>
+                    <a href="#" className="nav-link">Watch</a>
+                    <a href="#"  className="nav-link-notify-me">Notify me</a>
+                </div>
             </div>
             <div className='welcome-page-container'>
                 <div className='content-container'>

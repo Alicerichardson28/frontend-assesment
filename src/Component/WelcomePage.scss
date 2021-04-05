@@ -6,13 +6,41 @@ $whiteColor: #FFFFFF;
 // font style
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,300,600&display=swap');
 
-.nav-bar-welcome-page {
+.nav-bar-welcome-page-logo {
     width: 60px;
     height: 70px;
     background-color: $primary;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-bar-welcome-page-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 60px;
+}
+.nav-link {
+    text-decoration: none;
+    padding-right: 30px ;
+    color: $primary;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link-notify-me {
+    text-decoration: none;
+    color: $primary;
+    font-family: 'Poppins', sans-serif;
+    width: 120px;
+    height: 40px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    color: white;
+    
+    background-color: $mainColor;
 }
 
 .welcome-page-container {
