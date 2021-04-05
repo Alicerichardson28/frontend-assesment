@@ -1,6 +1,6 @@
 import React from 'react'
-import PageStructure from './Template/PageStructure'
-import Icon from './Template/Icon'
+import PageStructure from '../Template/PageStructure'
+import Icon from '../Template/Icon'
 import './WelcomePage.scss'
 
 const WelcomePage = () => {
