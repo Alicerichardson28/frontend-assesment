@@ -32,3 +32,11 @@ $whiteColor: #FFFFFF;
     font-size: 18px;
     color: $mainColor;
 }
+
+.icons-container {
+    margin-top: 70px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
