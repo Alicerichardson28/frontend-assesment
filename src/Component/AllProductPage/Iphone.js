@@ -30,11 +30,15 @@ const Iphone = () => {
                         </div>
                         <p className='i-phone-shipping-date'>Starts shipping {data.iphone}</p>
                     </div>
+                    <div className='i-phone-img-container'>
+                        <img className='img-i-phone' alt="iPhone" src={iPhone}/>
+                    </div>
+                    <Icon />
                 </div>
-                <div className='i-phone-img-container'>
-                    <img className='img-i-phone' alt="iPhone" src={iPhone}/>
+                <div>
+                    <p>Form $699</p>
+                    <p>buy Now > </p>
                 </div>
-                <Icon />
             </div>
         </>
     )

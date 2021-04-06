@@ -67,7 +67,7 @@ const LoginForm = () => {
                         return <div style={{color : "red"}}>{passWordErr[key]}</div>
                     })}
                 </div>
-                <button type="submit" className='sign-in-btn'><p className='sign-in-text'>Sign-In</p></button>
+                <button type="submit" className='sign-in-btn'><Link to="/landingPage"><p className='sign-in-text'>Sign-In</p></Link></button>
             </form>
             <div className="not-registered-container">
                 <p>Not registered? </p>
