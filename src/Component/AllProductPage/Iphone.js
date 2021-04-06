@@ -43,8 +43,11 @@ const Iphone = () => {
                         <p className='i-phone-buy-now'>Buy Now > </p>
                     </div>
                     <div className='second-section-img-container'>
-                        <img alt='front i phone small' className='img-second-section' src={iPhoneSmallFront}/>
-                        <img alt='back i phone small' className='img-second-section' src={iPhoneSmallBack}/>
+                        <div className='img-container'>
+                            <img alt='front i phone small' className='img-second-section' src={iPhoneSmallFront}/>
+                            <img alt='back i phone small' className='img-second-section' src={iPhoneSmallBack}/>
+                        </div>
+                        <hr />
                     </div>
                 </div>
             </div>
