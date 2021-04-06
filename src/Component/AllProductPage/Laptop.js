@@ -4,6 +4,7 @@ import Icon from '../Template/Icon'
 import './Laptop.scss'
 
 const Laptop = () => {
+    
     return (
         <>
             <PageStructure/>
