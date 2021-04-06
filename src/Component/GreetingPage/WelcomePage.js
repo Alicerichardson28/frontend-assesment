@@ -11,7 +11,7 @@ const WelcomePage = () => {
                 <div className='content-container'>
                     <h1 className='welcome-title'>Welcome to Apple</h1>
                     <p className='see-product'>See our Products</p>
-                    <Icon/>
+                    <Icon page="welcome-page"/>
                 </div>
             </div>
         </>

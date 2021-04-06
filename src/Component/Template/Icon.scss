@@ -1,4 +1,14 @@
-.icons-container {
+.icons-container-column {
+    margin-top: 400px;
+    width: 20%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons-container-row {
     margin-top: 70px;
     width: 20%;
     display: flex;

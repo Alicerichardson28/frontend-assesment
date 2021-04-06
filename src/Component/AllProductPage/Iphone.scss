@@ -1,0 +1,21 @@
+.i-phone-page-container {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 10px 100px 0 100px ;
+}
+
+.top-section-i-phone-page {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(to right, rgb(230, 230, 230) , rgb(255, 255, 255));
+}
+
+.i-phone-img-container{
+
+}
