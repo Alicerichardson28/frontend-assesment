@@ -1,6 +1,7 @@
 $mainColor: #5AC8FA;
 $primary: #000000;
 $whiteColor: #FFFFFF;
+$lightGrey: rgb(131, 131, 131);
 
 
 // font style
@@ -28,7 +29,7 @@ $whiteColor: #FFFFFF;
     text-decoration: none;
     padding-right: 30px ;
     font-size: 18px;
-    color: rgb(131, 131, 131);
+    color: $lightGrey;
     font-family: 'Poppins', sans-serif;
 }
 

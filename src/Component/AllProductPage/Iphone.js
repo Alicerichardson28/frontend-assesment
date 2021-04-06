@@ -20,13 +20,19 @@ const Iphone = () => {
             <PageStructure/>
             <div className='i-phone-page-container'>
                 <div className='top-section-i-phone-page'>
-                    <h2>iPhone</h2>
-                    <h1>The Ultimate iPhone</h1>
-                    <p>The future is here. Join the iPhone Upgrade Program to get latest iPhone - Now!</p>
-                    <p>Starts shipping {data.iphone}</p>
+                    <div className='top-content-container'>
+                        <h2 className='i-phone-h2'>iPhone</h2>
+                        <h1 className='i-phone-h1'>The Ultimate</h1>
+                        <h1 className='i-phone-h1'>iPhone</h1>
+                        <div className='p-container'>
+                            <p className='i-phone-p'>The future is here. Join the iPhone Upgrade</p>
+                            <p className='i-phone-p'>Program to get latest iPhone - Now!</p>
+                        </div>
+                        <p className='i-phone-shipping-date'>Starts shipping {data.iphone}</p>
+                    </div>
                 </div>
                 <div className='i-phone-img-container'>
-                    <img alt="iPhone" src={iPhone}/>
+                    <img className='img-i-phone' alt="iPhone" src={iPhone}/>
                 </div>
                 <Icon />
             </div>
