@@ -14,7 +14,7 @@ $lightGrey: rgb(131, 131, 131);
     justify-content: space-between;
     align-items: flex-start;
     height: 100vh;
-    margin: 10px 100px 0 100px ;
+    margin: 10px 100px 0 100px;
 }
 
 .top-section-apple-watch-page {
@@ -113,6 +113,7 @@ $lightGrey: rgb(131, 131, 131);
     align-items: center;
     margin-left: 100px;
 }
+
 .white-circle {
     display: flex;
     justify-content: center;
@@ -121,7 +122,7 @@ $lightGrey: rgb(131, 131, 131);
     height: 40px;
     background-color: rgb(247, 245, 245);
     border-radius: 50px;
-    border: 1px solid red;
+    border: 1px solid rgb(183, 183, 183);
 }
 
 .white-circle-in-side {
@@ -129,7 +130,7 @@ $lightGrey: rgb(131, 131, 131);
     height: 30px;
     background-color: rgb(253, 252, 252);
     border-radius: 50px;
-    border: 1px solid rgb(43, 42, 42);
+    border: 1px solid rgb(152, 152, 152);
 }
 
 .black-circle {
@@ -142,6 +143,7 @@ $lightGrey: rgb(131, 131, 131);
     border-radius: 50px;
     border: 1px solid rgb(183, 183, 183);
 }
+
 .black-circle-in-side {
     width: 30px;
     height: 30px;
