@@ -11,10 +11,11 @@ const LoginForm = () => {
     const [passWordErr, setPassWordErr] = useState({});
 
     // create validate 
-    const onSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         const isValid = formValidation();
     }
+
 
     const formValidation = () => {
         const emailErr = {}; 
@@ -39,7 +40,7 @@ const LoginForm = () => {
 
     return (
         <div className="container">
-            <form onSubmit={onSubmit} className="sign-in-form-container">
+            <form onSubmit={(e) => handleSubmit(e)} className="sign-in-form-container">
                 <h1 className='sign-in-title'>Sign-In</h1>
                 <div className="form-inputs">
                     <label className="from-label">Email</label>
@@ -67,7 +68,7 @@ const LoginForm = () => {
                         return <div style={{color : "red"}}>{passWordErr[key]}</div>
                     })}
                 </div>
-                <button type="submit" className='sign-in-btn'><Link to="/landingPage"><p className='sign-in-text'>Sign-In</p></Link></button>
+                <button type="submit" className='sign-in-btn'><Link to="/landingPage" className='sign-in-link'><p className='sign-in-text'>Sign-In</p></Link></button>
             </form>
             <div className="not-registered-container">
                 <p>Not registered? </p>

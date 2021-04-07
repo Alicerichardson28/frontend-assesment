@@ -51,7 +51,7 @@ const SignUpForm = () => {
     return (
         <div className="container">
             <form onSubmit={onSubmit} className="sign-up-form-container">
-                <h1 className='sign-in-title'>Sign-Up</h1>
+                <h1 className='sign-up-title'>Sign-Up</h1>
                 <div className="form-inputs">
                     <label className="from-label">Full Name</label>
                     <input 
@@ -91,7 +91,7 @@ const SignUpForm = () => {
                         return <div style={{color : "red"}}>{passWordErr[key]}</div>
                     })}
                 </div>
-                <button type="submit" className='sign-in-btn'><p className='sign-in-text'>Sign-Up</p></button>
+                <button type="submit" className='sign-up-btn'><p className='sign-up-text'>Sign-Up</p></button>
             </form>
             <div className="already-registered-container">
                 <p>Already registered? </p>

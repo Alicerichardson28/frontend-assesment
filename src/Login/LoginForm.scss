@@ -55,7 +55,8 @@ label {
     margin-top: 30px;
     width: 150px;
     height: 50px;
-    background: $primary 0% 0% no-repeat padding-box;
+    border: none;
+    background: $primary;
     opacity: 1;
 }
 .sign-in-text {
@@ -63,11 +64,15 @@ label {
     color: $whiteColor;
 }
 
+.sign-in-link {
+    text-decoration: none;
+}
+
 .not-registered-container{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     margin-top: 10px;
-    width: 27%;
+    width: 25%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
